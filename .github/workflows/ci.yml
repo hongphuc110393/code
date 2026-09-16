@@ -6,13 +6,7 @@ on:
   pull_request:
     branches:
       - main
+
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    container:
-      image: python:3.14-alpine
-    steps:
-      - name: Checkout source code
-        uses: actions/checkout@v4
-      - name: Check Python version
-        run: python --version
+  python-ci:
+    uses: hongphuc110393/template/.github/workflows/python-ci.yml@main
