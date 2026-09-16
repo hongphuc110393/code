@@ -1,5 +1,13 @@
-name: Python CI
-on: []
+name: CI/CD
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 jobs:
-  python-ci:
-    uses: hongphuc110393/template/.github/workflows/python-ci.yml@main
+  ci:
+    uses: hongphuc110393/ci-templates/.github/workflows/python-ci.yml@main
+    with:
+      project-name: project-1
