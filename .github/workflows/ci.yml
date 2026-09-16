@@ -10,4 +10,4 @@ jobs:
   ci:
     uses: hongphuc110393/ci-templates/.github/workflows/python-ci.yml@main
     with:
-      project-name: project-1
+      project-name: code
