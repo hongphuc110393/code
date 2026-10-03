@@ -8,6 +8,6 @@ on:
       - main
 jobs:
   ci:
-    uses: hongphuc110393/templates/.github/workflows/python-ci.yml@feature/test
+    uses: hongphuc110393/templates/.github/workflows/python-ci.yml@feature/new
     with:
       project-name: code
